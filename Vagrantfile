@@ -10,5 +10,5 @@ Vagrant.configure("2") do |config|
      vb.memory = "1024"
    end
 
-  config.vm.provision "shell", inline:  "bash scripts/provision.sh"
+config.vm.provision :shell, path: "scripts/provision.sh"
    end 
